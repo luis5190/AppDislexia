@@ -1,0 +1,53 @@
+{% extends 'core/base.html' %}
+{% block titulo %}Prueba{% endblock %}
+{% block home %}
+{% load static %}
+
+<div class="loginBg" style="background-image: url('{% static 'core/img/fondo.jpg'%}')">
+    <div class="container">
+        <div class="d-flex justify-content-center h-100">
+            <div class="card">
+                <div class="card-header">
+                    <h3>¿Cual es el idioma de su madre?</h3>
+                    <div class="d-flex justify-content-end social_icon">
+                        <span><i class="fab fa-facebook-square"></i></span>
+                        <span><i class="fab fa-google-plus-square"></i></span>
+                        <span><i class="fab fa-twitter-square"></i></span>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <form>
+                        <div class="input-group form-group">
+                            <div class="input-group-prepend">
+                            <button type="submit" class="btn login_btn2">Submit</button>
+                            </div>
+                            
+
+                        </div>
+                        <div class="input-group form-group">
+                            <select class="form-control login_despliegue">
+                                <option>Maya</option>
+                                <option>Pocoman</option>
+                                <option>Kaqchikel</option>
+                            </select>
+                        </div>
+                        
+
+
+
+                        <div class="form-group">
+                            <a class="btn float-right btn btn-outline-warning login_btn" href="{% url 'resultados' %}" role="button">Siguiente</a>
+                        </div>
+                    </form>
+                </div>
+                <div class="card-footer">
+                    <div class="d-flex justify-content-center">
+                        <a href="#">Ayuda</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
