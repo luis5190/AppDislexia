@@ -1,8 +1,6 @@
 
-.FuentesLuis{
-	--font-family-sans-serif: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
-	--font-family-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
-}
+@import url('https://fonts.googleapis.com/css?family=Numans');
+
 
 .loginBg{
     background-image: url('core/img/fondo.jpg');
@@ -18,92 +16,56 @@ background-repeat: no-repeat;
 height: 100%;
 font-family: 'Numans', sans-serif;
 }
+    
 
-.container{
-height: 100%;
-align-content: center;
-}
 
-.card{
-height: 450px;
-margin-top: auto;
-margin-bottom: auto;
-width: 400px;
-background-color: rgba(0,0,0,0.5) !important;
-}
 
-.social_icon span{
-font-size: 60px;
-margin-left: 10px;
-color: #FFC312;
-}
 
-.social_icon span:hover{
-color: #FFC312;
-cursor: pointer;
-}
 
-.card-header h3{
-color: white;
-}
-
-.social_icon{
-position: absolute;
-right: 20px;
-top: -45px;
-}
-
-.input-group-prepend span{
-width: 50px;
-background-color: #FFC312;
-color: black;
-border:0 !important;
-}
-
-input:focus{
-outline: 0 0 0 0  !important;
-box-shadow: 0 0 0 0 !important;
-
-}
-
-.remember{
-color: white;
-}
-
-.remember input
-{
-width: 20px;
-height: 20px;
-margin-left: 15px;
-margin-right: 5px;
-}
-
-.login_btn2{
-    margin-top: 30px;
-    color: black;
-    background-color: white;
-    width: 355px;
+.onoffswitch {
+    position: relative; width: 100px;
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
     }
-
-.login_despliegue{
-    color: black;
-    background-color: white;
-}
-
-.login_btn{
-margin-top: 30px;
-width: 100px;
-}
-
-.login_btn:hover{
-color: black;
-background-color: white;
-}
-
-.links{
-color: white;
-}
-
-.links a{
-margin-left: 4px;
-}
+    .onoffswitch-checkbox {
+    display: none;
+    }
+    .onoffswitch-label {
+    display: block; overflow: hidden; cursor: pointer;
+    border: 2px solid #FFFFFF; border-radius: 50px;
+    }
+    .onoffswitch-inner {
+    width: 200%; margin-left: -100%;
+    -moz-transition: margin 0.3s ease-in 0s; -webkit-transition: margin 0.3s ease-in 0s;
+    -o-transition: margin 0.3s ease-in 0s; transition: margin 0.3s ease-in 0s;
+    }
+    .onoffswitch-inner:before, .onoffswitch-inner:after {
+    float: left; width: 50%; height: 30px; padding: 0; line-height: 30px;
+    font-size: 25px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+    -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+    }
+    .onoffswitch-inner:before {
+    content: "SI";
+    padding-left: 10px;
+    background-color: #EEEEEE; color: #2FCCFF;
+    }
+    .onoffswitch-inner:after {
+    content: "NO";
+    padding-right: 10px;
+    background-color: #EEEEEE; color: #999999;
+    text-align: right;
+    }
+    .onoffswitch-switch {
+    width: 30px; margin: 1.5px;
+    background: #A1A1A1;
+    border: 2px solid #FFFFFF; border-radius: 50px;
+    position: absolute; top: 0px; bottom: 0; right: 71px;
+    -moz-transition: all 0.3s ease-in 0s; -webkit-transition: all 0.3s ease-in 0s;
+    -o-transition: all 0.3s ease-in 0s; transition: all 0.3s ease-in 0s;
+    }
+    .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+    }
+    .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+    right: 0px;
+    background-color: #2FCCFF;
+    }

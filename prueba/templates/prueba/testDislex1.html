@@ -1,0 +1,48 @@
+{% extends 'prueba/baseTest.html' %}
+
+{% block contentidoTest %}
+
+                <div class="card-header">
+                    <h3>Datos del estudiante</h3>
+                </div>
+                <div class="card-body">
+                    <form>
+                        <div style="color:black">Nombre</div>
+                        <div class="input-group form-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fas fa-user"></i></span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="Nombre completo">
+
+                        </div>
+                        <!--fecha de nacimientos-->
+                        <div style="color:blac">Fecha de nacimiento</div>
+                        <div class="input-group form-group">
+                            
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fas fa-user"></i></span>
+                            </div>
+                            <input type="date" class="form-control" placeholder="fecha" onfocus="(this.type='date'" onblur="(this.type=text)" >
+
+                        </div>
+                        <!--fecha de nacimientos-->
+                        <div style="color:blac">Genero</div>
+                            <select name="sexo" id="id_sexo">
+                                <option value="" selected="selected">---------</option>
+                                <option value="0">Varon</option>
+                                <option value="1">Mujer</option>
+                            </select>
+                        <!---boton-->
+                        <div style="color:black">Español es su lengua materna</div>
+                            <div class="onoffswitch">
+                                <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+                                <label class="onoffswitch-label" for="myonoffswitch">
+                                <div class="onoffswitch-inner"></div>
+                                <div class="onoffswitch-switch"></div>
+                                </label>
+                            </div>
+                        </div>
+
+                        
+  {% endblock %}
+  {% block siguiente %} href="{% url 'testDislex2' %}"  {%endblock%}

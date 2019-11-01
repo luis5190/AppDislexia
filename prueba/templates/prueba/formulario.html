@@ -1,0 +1,22 @@
+{% extends 'prueba/baseTest.html' %}
+
+{% block contentidoTest %}
+
+
+<div class="card-header">
+    <h3>Prueba de Audio</h3>
+    </div>
+        <div class="card-body">
+            <form action="" method="POST">
+            {% csrf_token %}
+            <table>
+            {{form.as_table}}
+            <!--{{form.POST}}-->                
+            </table>
+            
+            </div>
+
+
+
+  {% endblock %}
+  {% block siguiente %} <input  class="btn float-right btn-outline-primary mr-3" type="submit" value="Enviar"/>  {%endblock%}

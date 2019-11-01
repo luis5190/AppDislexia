@@ -1,0 +1,35 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block titulo %}Prueba{% endblock %}
+{% block estilo %} <link rel="stylesheet" href="{% static 'core/estilos/estiloTest.css' %}"> {% endblock %}
+{% block home %}
+
+<div class="loginBg" >
+    <div class="container">
+        <div class="d-flex justify-content-center h-100">
+            <div class="card">
+
+
+{% block contentidoTest %}  {% endblock %}
+
+                        <!---boton-->
+        
+                        <div class="form-group">
+                        {% block siguiente %}    {%endblock%}
+                         <!--<a  type="submit"  class="btn float-right btn-outline-primary mr-3"  href="{% url 'testDislex2' %}"  role="button">Avanzar</a>-->
+                        </div>
+                    </form>
+                <div class="card-footer">
+                    <div class="d-flex justify-content-center">
+                        <a href="#">Ayuda</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+{% endblock %}
