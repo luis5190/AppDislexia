@@ -5,7 +5,7 @@
 {% block home %}
 
 <div class="loginBg" >
-    <div class="container">
+    <div class="container" onload="setTimeout(myFunction, 10000)">
         <div class="d-flex justify-content-center h-100">
             <div class="card">
 
@@ -16,7 +16,7 @@
         
                         <div class="form-group">
                         {% block siguiente %}    {%endblock%}
-                         <!--<a  type="submit"  class="btn float-right btn-outline-primary mr-3"  href="{% url 'testDislex2' %}"  role="button">Avanzar</a>-->
+                         
                         </div>
                     </form>
                 <div class="card-footer">

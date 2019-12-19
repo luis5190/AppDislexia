@@ -22,22 +22,67 @@ width: 500px;
 
 }
 
-.card-header h3{
-color: black;
-}
-
-.input-group-prepend span{
-width: 50px;
-background-color: #FFC312;
-color: black;
-border:0 !important;
-}
-
 .centrar{
     margin-top: 20px;
     margin-left: 100px;
 }
-.centrar h1{
-    color: red;
+
+.btnTest{
+    margin-left: 20px;
+    margin-top: 30px;
 }
 
+.container-p11{
+    height: 210px;
+    width: 310px;;
+    margin-top: 50px;
+    margin-left: 60px;
+}
+
+.container-p12{
+    height: 210px;
+    width: 310px;;
+    margin-top: 30px;
+    margin-left: 60px;
+}
+.container-p13{
+    height: 200px;
+    width: 400px;;
+    margin-top: 0px;
+    margin-left: 30px;
+}
+
+
+
+.btnTest2{
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+.container-p21{
+    height: 150px;
+    width: 250px;;
+    margin-top: 80px;
+    margin-left: 120px;
+}
+
+.container-p22{
+    height: 100x;
+    width: 350px;;
+    margin-top: 20px;
+    margin-left: 65px;
+}
+
+.container-p31{
+    height: 40x;
+    width: 100px;;
+    margin-top: 100px;
+    margin-left: 200px;
+}
+
+.container-p312{
+    height: 40x;
+    width: 400px;
+    margin-top: 20px;
+    margin-left: 105px;
+}

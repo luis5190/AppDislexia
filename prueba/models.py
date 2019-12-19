@@ -12,5 +12,17 @@ class Prueba(models.Model):
         verbose_name = "Prueba"
         verbose_name_plural= "Pruebas"
         ordering = ["-fecha_examen"]
+        
     def __str__(self):
         return self.nombre
+
+class test(models.Model):
+    p1_p1=models.CharField(max_length=10)
+    resultado = models.CharField(max_length=20, null=True)
+
+    class Meta:
+        verbose_name="Test"
+        verbose_name_plural="Tests"
+
+        def __str__(self):
+            return self.p1_p1

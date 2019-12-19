@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="{% static 'core/estilos/miEstilo.css' %}">
     {% block estilo %}{% endblock %}
 </head>
-<body>
+<body onload="setTimeout(myFunction,10000)">
     <div class="container-fluid bg-primary fixed-top FuentesLuis">
         <nav class="navbar navbar-expand-md navbar-dark bg-primary container">
             <a class="navbar-brand" href="#">
@@ -34,7 +34,7 @@
                         <a class="nav-link" href="{% url 'formulario' %}">Test de dislexia</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="{% url 'testDislex1' %}" id="navbarDropdown" role="button"
+                        <a class="nav-link dropdown-toggle" href="{% url 'inicio' %}" id="navbarDropdown" role="button"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Usuario
                         </a>
